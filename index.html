@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Siêu Anh Hùng</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onload="init()">
+    <div class="wrap">
+        <div class="wrapBg"></div>
+        <div class="loginWindow">
+            <div class="close"></div>
+            <div class="loginMain">
+                <div class="username"><input id="username" type="text" placeholder="Nhập acc của bạn"></div>
+                <div class="password"><input id="password" type="password" placeholder="Password"></div>
+                <div class="gameZone"><input id="gameZone" type="number" onchange="reEdit()" min="1" placeholder="Nhập từ khóa server"></div>
+                <div class="playerId"><input id="playerId" type="text" placeholder="Nhập ID nhân vật"></div>
+                <button class="loginButton">LOGIN</button>
+                <div class="prompts"><p>Xin nhập đúng Server và ID nhân vật Nhập nhầm không nhận được quà.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="twoDimensionalCode"><div class="twoDimensionalCodeMain"></div></div>
+
+    <div class="content">
+        <header class="header">
+            <div class="headBody">
+                <div class="logo"></div>
+                <div class="loginState">
+                    <div class="stateId"><p>vna808989</p></div>
+                    <div class="stateServer"><p>200</p></div>
+                    <div class="logout"><p>logout</p></div>
+                </div>
+                <div class="login"><p>LOGIN</p></div>
+                <div class="download">
+                    <a href="http://goo.gl/loAvIv"><div class="appStore"></div></a>
+                    <a href="http://bit.ly/1WZDNht"><div class="android"></div></a>
+                </div>
+
+                <div class="date"><p>01/06/2016 00:00-15/06/2016 00:00</p></div>
+            </div>
+        </header>
+        <section class="voteArea" id="voteArea">
+            <ul class="voteAreaBody">
+                <li class="one">
+                    <div class="character">
+                        <div class="choose"></div>
+                        <div class="character1 hoverArea"><p>????</p></div>
+                        <svg>
+                            <defs>
+                                <clippath id="svgPath1" clipPathUnits="objectBoundingBox">
+                                    <polygon points="0 .08, 1 0, .88 1, .22 .9"></polygon>
+                                </clippath>
+                            </defs>
+                        </svg>
+                    </div>
+                </li>
+                <li class="two">
+                    <div class="character">
+                        <div class="choose"></div>
+                        <div class="character2 hoverArea"><p>????</p></div>
+                        <svg>
+                            <defs>
+                                <clippath id="svgPath2" clipPathUnits="objectBoundingBox">
+                                    <polygon points=".11 0, .8 .10, 1 .92, 0 1"></polygon>
+                                </clippath>
+                            </defs>
+                        </svg>
+                    </div>
+                </li>
+                <li class="three">
+                    <div class="character">
+                        <div class="choose"></div>
+                        <div class="character3 hoverArea"><p>????</p></div>
+                        <svg>
+                            <defs>
+                                <clippath id="svgPath3" clipPathUnits="objectBoundingBox">
+                                    <polygon points="0 .08, 1 0, .88 1, .22 .9"></polygon>
+                                </clippath>
+                            </defs>
+                        </svg>
+                    </div>
+                </li>
+                <li class="four">
+                    <div class="character">
+                        <div class="choose"></div>
+                        <div class="character4 hoverArea"><p>????</p></div>
+                        <svg>
+                            <defs>
+                                <clippath id="svgPath4" clipPathUnits="objectBoundingBox">
+                                    <polygon points=".11 0, .8 .10, 1 .92, 0 1"></polygon>
+                                </clippath>
+                            </defs>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="vote"></button>
+        </section>
+        <section class="awardArea">
+            <div class="awardTitle"></div>
+            <div class="awardMain">
+                <div class="awardBgHead"></div>
+                <div class="awardBG"></div>
+                <ul class="awardBody">
+                    <li class="award1">
+                        <div class="listHead"></div>
+                        <div class="caption"><p>(Bài post mini game “Bất bại anh hùng” nhận được 5000 lượt
+                            share  công khai, toàn server sẽ nhận được quà)</p></div>
+                        <div class="awardContent">
+                            <div class="award11"></div>
+                            <div class="award12"></div>
+                            <div class="award13"></div>
+                        </div>
+                    </li>
+                    <li  class="award2">
+                        <div class="listHead"></div>
+                        <div class="caption"><p>(Số phiếu cao nhất của nhân vật Manga tương ứng với nhóm
+                            người chơi bỏ phiếu)</p></div>
+                        <div class="awardContent">
+                            <div class="award21"></div>
+                            <div class="award22"></div>
+                            <div class="award23"></div>
+                        </div>
+                    </li>
+                    <li  class="award3">
+                        <div class="listHead"></div>
+                        <div class="caption"><p>(Nhóm người chơi bỏ phiếu nhân vật Manga khác)</p></div>
+                        <div class="awardContent">
+                            <div class="award31"></div>
+                            <div class="award32"></div>
+                            <div class="award33"></div>
+                        </div>
+                    </li>
+                    <li  class="award4">
+                        <div class="listHead"></div>
+                        <div class="caption"><p>(Số phiếu cao nhất của nhân vật Manga tương ứng với nhóm
+                            người chơi bỏ phiếu)</p></div>
+                        <div class="awardContent">
+                            <div class="award41"></div>
+                            <div class="award42"></div>
+                            <div class="award43"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="awardMessage">
+                    <p class="messageName">Chú ý: </p>
+                    <p class="message">
+                        Rương mạnh nhất (mở ra ngẫu nhiên nhận được 5 mảnh của 1 trong những siêu thần: Người Hùng Tia Chớp,
+                        Odin, Ma Hành Gỉa, Constantine)
+                    </p>
+                </div>
+            </div>
+
+            <div class="rule">
+                <div class="ruleTitle"></div>
+                <div class="ruleBG"></div>
+                <ul class="rules">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="thx">
+                <div class="thxMessage"></div>
+                <a href="https://www.facebook.com/sieuanhhungvn"><div class="thxLink"></div></a>
+                <a href="#voteArea"><button class="moveUp"></button></a>
+            </div>
+
+
+        </section>
+        <footer class="footer">
+            <p>POCKET GAMES PTE.LTD.</p>
+            <p>COPYRIGHT @ 2016 POCKET GAMES ALL RIGHTS PESERVED</p>
+        </footer>
+    </div>
+
+
+    <!--body goes here-->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/md5.js" type="text/javascript"></script>
+
+</body>
+</html>
